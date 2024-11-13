@@ -56,6 +56,9 @@ net.ipv4.ip_forward=1
 --------------------
 
 sudo nano /etc/default/ufw:
+#configure DEFAULT_INPUT_POLICY to DROP, DEFAULT_OUTPUT_POLICY to ACCEPT and DEFAULT_FORWARD_POLICY to ACCEPT
+#don't delete other rules in the ufw file.
+
 
 #Set the default input policy to ACCEPT, DROP, or REJECT. Please note that if
 #you change this you will most likely want to adjust your rules.
